@@ -11,6 +11,7 @@ import Project from '../sections/project';
 import Education from '../sections/education';
 import Experience from '../sections/experience';
 import ProjectItem from '../sections/projectitems'
+import projects from '../data/projects';
 
 
 export default function Home({ posts }) {
@@ -31,7 +32,7 @@ export default function Home({ posts }) {
 				<Experience />
 				<Project posts={posts} lookAt={handleLookAt} />
 				<Contact />
-				{IDofLookAt != 0 && <ProjectItem post={posts.filter(post => post.id == IDofLookAt)[0]} lookAt={handleLookAt} />}
+				{IDofLookAt != 0 && <ProjectItem post={projects.filter(post => post.id == IDofLookAt)[0]} lookAt={handleLookAt} />}
 			</Layout>
 		</ThemeUIProvider>
 	);

@@ -14,6 +14,7 @@ import gallery3 from '../assets/images/gallery/3.png';
 import gallery4 from '../assets/images/gallery/4.png';
 import gallery5 from '../assets/images/gallery/5.png';
 import gallery6 from '../assets/images/gallery/6.png';
+import projects from '../data/projects';
 
 const data = [
   {
@@ -88,12 +89,12 @@ const Gallery = ({ posts, lookAt }) => {
         />
         {/* <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}> */}
         <Box sx={styles.galleryWrapper}>
-          {([])?.map((item) => (
+          {(projects)?.map((item) => (
             <GalleryCard key={item.id} item={item} push={handlePushPage} />
           ))}
         </Box>
         {/* <Button variant="muted" sx={styles.button} onClick={() => router.push('/projects')}> */}
-        <Button variant="muted" sx={styles.button} onClick={() => setLoad(true)}>
+        <Button variant="muted" sx={styles.button} onClick={() => setLoad(!load)}>
           See more projects <RiArrowRightSLine size="20px" />
         </Button>
       </Container>
