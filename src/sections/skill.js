@@ -3,7 +3,7 @@ import { jsx, Box, Button, Container, Image } from 'theme-ui';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import Slider from 'react-slick';
 import SectionHeading from '../components/section-heading';
-import nest from '../assets/images/clients/info/Nestjs.png';
+import nest from '../assets/images/clients/info/nestjs.png';
 import react from '../assets/images/clients/info/react.png';
 import next from '../assets/images/clients/info/nextjs.png';
 import nodejs from '../assets/images/clients/info/nodejs.png';
