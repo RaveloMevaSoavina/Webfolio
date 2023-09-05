@@ -66,7 +66,7 @@ const masonryOptions = {
   transitionDuration: 0.5,
 };
 
-const Gallery = ({ posts, lookAt }) => {
+const Gallery = ({ lookAt }) => {
 
   const router = useRouter()
   const [load, setLoad] = useState(false)
